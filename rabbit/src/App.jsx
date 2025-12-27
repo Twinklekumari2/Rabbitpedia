@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
-// import InteractiveBackground from './components/InteractiveComponents'
+import { Routes, Route } from "react-router-dom";
+import HomePage from './pages/HomePage';
 
 const App = () => {
   return (
     <div>
-         <Navbar/>
-         <HeroSection/>
+        <Routes>
+          <Route path='/' element={<HomePage/>}/>
+        </Routes>
     </div>
   )
 }
